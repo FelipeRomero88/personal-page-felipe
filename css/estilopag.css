@@ -1,0 +1,137 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+/* estilos generales*/
+
+.image-container{
+    display: flex;
+}
+.image-container img {
+    width: 100%;
+}
+
+/* aca tengo los estilos del header*/
+
+header{
+    background: #0c0c0c;
+    padding: 10px 50px;
+}
+#logo {
+    width: 80px;
+}
+#logo img {
+    border-radius: 100%;
+    border: 2px solid #ffffff;
+}
+
+/* aca estan los estilos del hero*/
+
+#hero {
+    position: relative;
+    
+}
+#hero #fondo {
+    display: inline-block;
+    width: 100%;
+
+}
+
+
+#hero .informacion-contenedor {
+    position: absolute;
+    top: 49.5%;
+    
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    color: #ffffff;
+    padding: 200px;
+    align-items: center;
+}
+
+
+#hero .informacion-contenedor #foto {
+    width: 60%;
+}
+#hero .informacion-contenedor #foto img {
+    border-radius: 100%;
+}
+#hero .informacion-contenedo .informacion {
+    margin-left: 30px;
+    font-weight: bold;
+    width: calc(100%-200px);
+}
+
+#hero .informacion-contenedor .informacion span {
+    display: inline-block;
+    color: #c7c7c7;
+    margin-bottom: 140px;
+    
+}
+
+/*estilos del main*/
+main {
+    padding: 100px;
+}
+main .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    list-style: none;
+}
+main .social-icons li {
+    margin-left: 10px;
+}
+main .social-icons .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(184, 18, 18);
+    padding: 15px;
+    
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+main .social-icons #linkedin{
+    background: rgb(3, 65, 136);
+}
+main .social-icons #facebook{
+    background: rgb(6, 6, 121);
+}
+main .social-icons #github{
+    background: rgba(43, 43, 44, 0.952);
+}
+main .social-icons #youtube{
+    background: rgba(206, 7, 7, 0.952);
+}
+main .social-icons #platzi{
+    background: rgb(6, 28, 56);
+}
+main .social-icons #twitter{
+    background: rgba(4, 119, 172, 0.986);
+}
+@media (max-width: 720px) {
+    #hero .informacion-contenedor {
+        padding: 10px;
+    }
+    #hero .informacion-contenedor .informacion span {
+        margin-bottom: 20px;
+    }
+    main {
+        padding: 50px;
+    }
+}
